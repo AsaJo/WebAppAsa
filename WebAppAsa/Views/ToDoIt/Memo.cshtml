@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "ToDo It";
+}
+<form asp-action="AddMemo" method="post">
+    <input type="text" name="memo" value="" placeholder="Add todo" />
+    <input type="submit" value="Add toDo" />
+</form>
+
+<ul>
+    @if(ViewBag.Memos != null && ViewBag.Memos is string)
+        string[]
+</ul>

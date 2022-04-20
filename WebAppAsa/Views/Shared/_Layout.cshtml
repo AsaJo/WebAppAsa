@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Åsa Jomsson" ´ />
+
+    <title>My First MVC</title>
+    <link href="~/Css/Styles.css" rel="stylesheet"asp-append-version="true"  />
+    @*Drag and drop Awesome...*@
+</head>
+<body>
+    <header class="header-nav">
+        <h1>LOGO</h1>
+        <nav>
+            <ul>
+                <li><a asp-action="About" asp-controller="Home">About</a></li>
+                <li><a asp-action="Contact" asp-controller="Home">Contact</a></li>
+                <li><a asp-action="Portfolio" asp-controller="Home">Portfolio</a></li>
+                <li><a asp-action="FeverCheck" asp-controller="Doctor">Doctor Vader</a></li>
+                <li><a asp-action="GuessingGame" asp-controller="Game">Guessing Game</a></li>
+                <li><a asp-action="Index" asp-controller="Home">Going back to index</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">@*Think of it as main-container*@
+        @RenderBody()@* Reder body view body content here*@
+    </div>
+    <footer><p>&copy; Åsa Jonsson @DateTime.Now.Year</p></footer>
+
+</body>
+</html>
